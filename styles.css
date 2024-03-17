@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background: #000;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nav {
+    height: 30px;
+    width: 97.4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+}
+
+.nav li {
+    list-style: none;
+    margin: 0 20px 0 0;
+}
+
+.ti li {
+    cursor: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.lo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lo li {
+    cursor: pointer;
+}
+
+.btn {
+    color: #fff;
+    font-weight: bold;
+    height: 30px;
+    width: 90px;
+    background: rgb(236, 63, 47);
+    box-shadow: 0 0 5px rgb(186, 60, 60),
+        0 0 25px rgb(182, 58, 58);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .2s;
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px rgb(182, 58, 58),
+        0 0 25px rgb(182, 58, 58),
+        0 0 80px rgb(179, 75, 75);
+    transform: scale(1.1);
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+table {
+    border: 2px solid #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+td button {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#cb {
+    cursor: pointer;
+    margin-right: 20px;
+    background: rgb(99, 232, 99);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 5px #fff(0, 0, 0, 0.5);
+    transition: .2s;
+}
+
+#cb:hover {
+    transform: scale(1.05);
+}
+
+td i {
+    font-size: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#te {
+    cursor: pointer;
+    margin-right: 20px;
+    background: crimson;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    transition: .2s;
+}
+
+#te:hover {
+    transform: scale(1.05);
+}
+
+#ae {
+    cursor: pointer;
+    background: rgb(92, 231, 231);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    transition: .2s;
+}
+
+#ae:hover {
+    transform: scale(1.05);
+}
+
+#data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    display: none;
+    color: #fff;
+}
+
+.popup , .popup1 ,.popup2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: none;
+}
+
+.loginbox {
+    height: 7%;
+    width: 400px;
+    padding: 20px;
+    font-weight: 600;
+    background: linear-gradient(12deg,#fff,#cecdcd67);
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 38vh 145vh;
+}
+
+.inputbox {
+    position: relative;
+    width: 310px;
+    margin: 30px;
+    border-bottom: 2px solid #000;
+    margin: px 0 0 0;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #000;
+    transition: .5s ease-in-out;
+
+}
+
+.inputbox input:focus~label,
+.inputbox input:valid~label {
+    top: -5px;
+
+}
+
+.inputbox input {
+    width: 100;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #000;
+    padding: 0 35px 0 5px;
+
+}
+
+.inputbox .icon {
+    position: absolute;
+    right: 8px;
+    color: #000;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.inputbox .icon:hover {
+    transform: scale(1.1);
+}
+
+.bb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 30px;
+    width: 90px;
+    background: crimson;
+    box-shadow: 0 0 5px rgb(182, 58, 83),
+        0 0 25px rgb(182, 58, 83);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+    margin-bottom: 20px
+}
+
+.bb button {
+    background: transparent;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+
+.bb:hover {
+    box-shadow: 0 0 5px rgb(182, 58, 83),
+        0 0 25px rgb(182, 58, 83),
+        0 0 80px rgb(179, 75, 96);
+    transform: scale(1.1);
+}
+
+.me {
+    color: red; 
+    height: 5px; 
+    width: 100%;
+    display: flex;
+    margin: 0 0 0 120px;
+}

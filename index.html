@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Expenses Record</title>
+</head>
+
+<body>
+    <div class="popup" id="popup">
+        <div class="loginbox">
+            <form id="form1" method="post" action="/signupForm">
+                <h2>REGISTRASION FORM</h2>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="name" id="username" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </span>
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="bb">
+                    <button type="submit" onclick="toggle()">Login</button>
+                </div>
+        </div>
+        </form>
+    </div>
+    <div class="popup1" id="popup1">
+        <div class="loginbox">
+            <form id="form2" method="post" action="/signinForm" onsubmit="signIn(); return false;">
+                <h2>LOGIN FORM</h2>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="name" id="u" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </span>
+                    <input type="password" id="p" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="me">
+                    <p id="mes"></p>
+                </div>
+
+                <div class="bb">
+                    <button type="submit">Login</button>
+                </div>
+        </div>
+        </form>
+    </div>
+    <div class="popup2" id="popup2" method="post" action="/current" action="/getNcu">
+        <div class="loginbox">
+            <div id="form3">
+                <h2>ADD BALANCE</h2>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="name" id="u1" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <input type="number" id="c" required>
+                    <label>Current Balance</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <input type="number" id="e" required>
+                    <label>Add Expenses</label>
+                </div>
+                <div class="bb">
+                    <button type="submit" onclick="f()-fetchNcuAndUpdateBal()">Add</button>
+                </div>
+                <div class="me">
+                    <p id="mes"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="ti">
+            <li>Expenses Manageement System</li>
+        </div>
+        <div class="lo">
+            <li onclick="pop()">Registrasion</li>
+            <button class="btn" onclick="pop1()">Sign in</button>
+        </div>
+    </div>
+    <div class="main">
+        <table>
+            <tr>
+            <tr id="data">
+                <td>
+                    <h2>Details :</h2>
+                </td>
+                <td>Name : <span id="display"></span></td>
+                <td>Current Balance : <span id="bal"></span></td>
+            </tr>
+            <td><button id="cb" onclick="show()"><i class="fa-solid fa-credit-card"></i><br>Current Balance</button>
+            </td>
+            <td><button id="te"><i class="fa-solid fa-money-bill-transfer"></i><br>Update Balance</button></td>
+            <td><button id="ae"><i class="fa-solid fa-upload"></i><br>Add Expenses</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
