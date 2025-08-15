@@ -9,7 +9,7 @@
 
 > A full-stack web application built to help users manage their income and expenses effectively. Track your finances, categorize transactions, and gain insight into your spending habits.
 
-This money tracker app was built using the MERN stack (MongoDB, Express.js, Node.js, with a vanilla JS/HTML/CSS frontend). It provides a user-friendly interface to perform CRUD (Create, Read, Update, Delete) operations on financial transactions.
+This money tracker app was built using MongoDB, Node.js, with a vanilla JS/HTML/CSS frontend. It provides a user-friendly interface to perform CRUD (Create, Read, Update, Delete) operations on financial transactions.
 
 ## 🚀 Live Demo
 
