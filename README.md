@@ -75,7 +75,7 @@ You must have [Node.js](https://nodejs.org/en/) (which includes npm) and [MongoD
     npm install
     ```
 
-4.  **Set up environment variables:**
+4.  **Set up environment variables:** 
     Create a file named `.env` in the root of the project and add your MongoDB connection string:
     ```
     MONGODB_URI=your_mongodb_connection_string
